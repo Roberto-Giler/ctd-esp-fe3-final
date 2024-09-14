@@ -2,10 +2,13 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import TableStyles from '../Styles/Table.module.css'
+import { selectTheme } from '../Components/utils/selectTheme'
+import { useContextGlobal } from '../Context/global.context'
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
+  const {state}= useContextGlobal()
   const [detail, setDetail]=useState({})
   // Consumiendo el parhttps://jsonplaceholder.typicode.com/users/:idametro dinamico de la URL deberan hacer un fetch a un user en especifico
   const {id}=useParams()
@@ -21,8 +24,8 @@ const Detail = () => {
   
   return (
     <div className=''>
-      <h1>Detalles de la destista "{detail.username}"" </h1>
-      <table className={TableStyles.light}>
+      <h1>Detalles de la destista "{detail.username}" </h1>
+      <table className={selectTheme(state.theme,TableStyles)}>
         <tr>
           <th>Nombre</th>
           <th>Email</th>

@@ -37,6 +37,8 @@ false)
       console.log('nombre completo:'+user.name)
       console.log('email:'+ user.email)
       setShowForm(false)
+      setShowError(false)
+
       
     }else{
       setShowError(true)

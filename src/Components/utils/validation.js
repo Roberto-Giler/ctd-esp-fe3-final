@@ -12,4 +12,5 @@ export const validationEmail=(email)=>{
     const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     console.log()
     return emailPattern.test(email)
+    
 }

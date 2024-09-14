@@ -20,7 +20,7 @@ const Card = ({dentista}) => {
     // console.log(state.favs)
   }
   const classNamesCard=`${CardStyles.card} ${state.theme==themes.light?CardStyles.light:CardStyles.dark}`
-  console.log(classNamesCard)
+  // console.log(classNamesCard)
   // console.log(dentista)
   return (
     <div className={classNamesCard}>

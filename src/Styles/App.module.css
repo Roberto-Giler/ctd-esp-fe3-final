@@ -1,0 +1,27 @@
+
+.light{
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.767);
+}
+
+.dak{
+  color: rgba(255, 255, 255, 0.849);
+  background-color:#12121296 ;
+}
+
+
+.light a{
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+
+}
+.light a:hover{
+    color: rgb(136, 136, 136);
+} 
+  
+.dark  a {
+    color: white;
+}
+

@@ -45,10 +45,10 @@ false)
   }
 
   return (
-    <div className={FormStyles.form}>
+    <div>
       {showForm ?
         <>
-          <form onSubmit={handleSummit}>
+          <form onSubmit={handleSummit} className={FormStyles.form}>
             <label>NOMBRE</label>
             <input type="text" onChange={handleChangeName}  />
             

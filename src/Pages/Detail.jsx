@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
+import TableStyles from '../Styles/Table.module.css'
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -19,11 +19,10 @@ const Detail = () => {
     })
   }, [])
   
-  
   return (
     <div className=''>
       <h1>Detalles de la destista "{detail.username}"" </h1>
-      <table>
+      <table className={TableStyles.light}>
         <tr>
           <th>Nombre</th>
           <th>Email</th>
